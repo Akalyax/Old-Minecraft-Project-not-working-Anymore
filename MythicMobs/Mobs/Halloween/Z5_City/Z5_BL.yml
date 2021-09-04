@@ -1,0 +1,11 @@
+Witch:
+  Type: ZOMBIE
+  Display: '&aDummy'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  Options:
+    MovementSpeed: 0
+  Skills:

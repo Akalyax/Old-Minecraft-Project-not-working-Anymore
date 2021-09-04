@@ -1,0 +1,6 @@
+ThrowingTrident:
+  Conditions:
+  - incombat
+  - targetinlineofsight true
+  Skills:
+  - shoot{type=trident;velocity=5;d=1}

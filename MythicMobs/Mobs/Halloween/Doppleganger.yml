@@ -1,0 +1,27 @@
+Doppleganger:
+  Type: ZOMBIE
+  Display: ''
+  Health: 10
+  Damage: 10
+  Equipment:
+  - IRON_AXE HAND
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Modules:
+    ThreatTable: true
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - setvariable{var=caster.renaming;type=STRING;value=<target.name>} @NearestPlayer{r=1} ~onSpawn
+  - setname{name=&e<caster.var.renaming> &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>} @self ~onSpawn
+  - setname{name=&e<caster.var.renaming> &7<&lb>&c<caster.hp>&4<&heart>&7<&rb> <caster.level>} @Self ~onDamaged

@@ -1,0 +1,12 @@
+PickaxeHitting:
+  Conditions:
+  - incombat
+  - targetwithin 5
+  Skills:
+  - damage{a=<skill.damage>}
+  - Potion{t=SLOW;l=<skill.slowlvl>;d=<skill.slowduration>;p=false;i=false}
+  - Aura{auraName=Bleeding;onTick=BleedingDamage;interval=20;duration=200}
+
+BleedingDamage:
+  Skills:
+  - damage{a=1}

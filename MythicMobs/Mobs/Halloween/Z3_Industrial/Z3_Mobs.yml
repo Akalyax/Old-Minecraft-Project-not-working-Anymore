@@ -1,0 +1,52 @@
+Worker:
+  Type: ZOMBIE
+  Display: '&eWorker &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 8
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=Worker} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer
+  - skill:Enrage @Self ~onTimer:200 <20%
+  - setvariable{var=enrageUpping;scope=caster;value=1} @Self ~onSpawn
+
+#-----------------------------------------------
+IndustrialBasicMiner:
+  Type: ZOMBIE
+  Display: '&eIndustrialBasicMiner &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=IndustrialBasicMiner} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer
+  - skill:Enrage @Self ~onTimer:100 <20%
+  - setvariable{var=enrageUpping;scope=caster;value=1} @Self ~onSpawn

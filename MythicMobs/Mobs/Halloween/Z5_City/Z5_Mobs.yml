@@ -1,0 +1,123 @@
+PoliceMan:
+  Type: ZOMBIE
+  Display: '&ePoliceMan &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=PoliceMan} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer
+
+#-----------------------------------------------
+Citizen:
+  Type: ZOMBIE
+  Display: '&eCitizen &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=Citizen} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer
+
+#-----------------------------------------------
+PregnantWomen:
+  Type: ZOMBIE
+  Display: '&ePregnantWomen &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=PregnantWomen} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer
+
+#-----------------------------------------------
+Poisoner:
+  Type: ZOMBIE
+  Display: '&ePoisoner&7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=Poisoner} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer
+
+#-----------------------------------------------
+Jumper:
+  Type: ZOMBIE
+  Display: '&eJumper &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=Jumper} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer

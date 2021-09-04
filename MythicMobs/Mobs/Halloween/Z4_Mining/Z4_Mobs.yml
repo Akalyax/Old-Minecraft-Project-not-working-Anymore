@@ -1,0 +1,109 @@
+HelmetMiner:
+  Type: ZOMBIE
+  Display: '&eHelmetMiner &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=HelmetMiner} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer
+  - skill:Enrage @Self ~onTimer:100 <20%
+  - setvariable{var=enrageUpping;scope=caster;value=1} @Self ~onSpawn
+  - Potion{t=BLINDNESS;l=10;d=100;p=false;i=false} @PIR{r=8} 0.1
+
+#-----------------------------------------------
+PickaxeMiner:
+  Type: ZOMBIE
+  Display: '&ePickaxeMiner &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=PickaxeMiner} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer
+  - skill:Enrage @Self ~onTimer:100 <20%
+  - setvariable{var=enrageUpping;scope=caster;value=1} @Self ~onSpawn
+  - skill:PickaxeHitting{damage=10;slowlvl=1;slowduration=100} @target 0.1
+
+#-----------------------------------------------
+MinerOfTheDepths:
+  Type: ZOMBIE
+  Display: '&eMinerOfTheDepths &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=MinerOfTheDepths} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer
+  - skill:Enrage @Self ~onTimer:100 <20%
+  - setvariable{var=enrageUpping;scope=caster;value=1} @Self ~onSpawn
+  - Potion{t=BLINDNESS;l=10;d=100;p=false;i=false} @PIR{r=8} 0.1
+  - skill:PickaxeHitting{damage=10;slowlvl=1;slowduration=100} @target 0.1
+
+#-----------------------------------------------
+LittleSpider:
+  Type: CAVE_SPIDER
+  Display: '&eLittleSpider &7<&lb>&A<caster.mhp>&4<&heart>&7<&rb>'
+  Health: 10
+  Damage: 10
+  Equipment:
+  Drops:
+  LevelModifiers:
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+    MovementSpeed: 0.001
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  Skills:
+  - skill:MobsLifeIndicator{mobname=LittleSpider} @Self ~onDamaged
+  - sudoskill{s=DopplegangerInvocation} @Trigger ~onKillPlayer
+  - Aura{auraName=Poisoning;onTick=BleedingDamage;interval=20;duration=160}
