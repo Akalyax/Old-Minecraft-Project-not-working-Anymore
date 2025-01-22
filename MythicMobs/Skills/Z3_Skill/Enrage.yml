@@ -1,6 +1,0 @@
-Enrage:
-  Skills:
-  - Potion{t=SPEED;d=200;l=<caster.var.enrageUpping>;p=false;i=false}
-  - Potion{t=INCREASE_DAMAGE;d=200;l=<caster.var.enrageUpping>;p=false;i=false}
-  - message{m="<caster.var.enrageUpping>"} @PIR{r=200}
-  - variableadd{var=caster.enrageUpping;a=1}

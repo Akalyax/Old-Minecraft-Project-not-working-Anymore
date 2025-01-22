@@ -1,6 +1,0 @@
-Charge:
-  Conditions:
-  - incombat
-  Skills:
-  - lunge{velocity=<skill.velocity>;velocityY=0} @Target
-  - damage{a=<skill.damage>} @PIR{r=5}

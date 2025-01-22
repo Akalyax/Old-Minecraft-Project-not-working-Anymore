@@ -1,3 +1,0 @@
-MobsLifeIndicator:
-  Skills:
-  - setname{name=&e<skill.mobname> &7<&lb>&C<caster.hp>&4<&heart>&7<&rb>} @self

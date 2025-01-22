@@ -1,7 +1,0 @@
-LittleSprint:
-  Conditions:
-  - incombat
-  Skills:
-  - potion{type=SPEED;d=100;l=2;p=false;i=false}
-  - delay 100
-  - potion{type=SLOW;d=100;l=1;p=false;i=false}

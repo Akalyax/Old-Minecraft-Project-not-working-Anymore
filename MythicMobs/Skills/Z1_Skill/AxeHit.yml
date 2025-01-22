@@ -1,7 +1,0 @@
-AxeHit:
-  Conditions:
-  - targetwithin 5
-  - targetinlineofsight true
-  Skills:
-  - damage{a=1}
-  - potion{type=SLOW;d=100;l=2;p=false;i=false}
